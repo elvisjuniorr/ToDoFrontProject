@@ -1,0 +1,77 @@
+.logInPage {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: black;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.logIn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25rem;
+    height: 20rem;
+    background-color: white;
+    gap: 1rem;
+    border-radius: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.logIn > h4{
+    height: 2.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Poppins';
+    text-align: center;
+}
+
+.logInForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 22.5rem;
+}
+
+.logInForm > input {
+    border-radius: 0.5rem;
+    height: 2.688rem;
+    border: 0.1rem solid black;
+    background-color: transparent;
+    padding-left: 1rem;
+    font-family: 'Poppins'; 
+    
+}
+
+.logInForm > div {
+    display: flex;
+    justify-content: center;
+}
+
+.logInForm > div > button {
+    padding: 0.75rem;
+    color: white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 1rem;
+    width: min-content;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem; 
+    font-family: 'Poppins';
+}
+
+.logIn  a {
+    font-family: 'Poppins';
+    text-decoration: none;
+}
+
+.logIn > p {
+    font-family: 'Poppins';
+}
+
+

@@ -1,0 +1,89 @@
+.signUpPage{
+    display: flex;
+    padding-top: 1rem;
+    justify-content: center;
+    padding-bottom: 1rem;
+    background-color: black;
+}
+
+.signUp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25rem;
+    height: 42.875rem;
+    background-color: white;
+    border-radius: 1.5rem;
+}
+
+.signUp a {
+    font-family: 'Poppins';
+}
+
+.signUp > h4{
+    height: 2.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Poppins';
+    text-align: center;
+}
+
+.signUpForm {
+    display: flex;
+    flex-direction: column;
+    width: 22.5rem;
+}
+
+.signUpForm > label {
+    margin-top: 1rem;
+    font-family: 'Poppins';
+    padding-left: 0.2rem;
+}
+
+.signUpForm > input {
+    border-radius: 0.5rem;
+    height: 2.75rem;
+    border: 0.1rem solid black;
+    background-color: transparent;
+    padding-left: 1rem;
+    font-family: 'Poppins';
+}
+
+.signUpForm > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.5rem;
+}
+
+.signUpForm > div > p {
+    padding-left: 0.2rem;
+    font-family: 'Poppins';
+}
+
+.signUpForm > div > p > a{
+    text-decoration: none;
+}
+
+.signUpForm > div> button {
+    padding: 0.75rem;
+    color: white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 1rem;
+    width: min-content;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.signUp > p {
+    font-family: 'Poppins';
+    padding-top: 0.5rem;
+}
+
+.signUp > p > a {
+    text-decoration: none;
+}
+

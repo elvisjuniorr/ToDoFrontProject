@@ -1,0 +1,49 @@
+.headerPag{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.header{
+    background-color:white;
+    height: 2rem;
+    /* border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem; */
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header > h2{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.header > div{
+    display: flex;
+    gap: 1rem;
+}
+
+.header > div > button{
+    padding: 0.5rem;
+    background-color: crimson;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+.header > div > a{
+    border: 0.1rem solid black;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: black;
+}
+
+.header > div > a:hover{
+    background-color: black;
+    color: white;
+}
