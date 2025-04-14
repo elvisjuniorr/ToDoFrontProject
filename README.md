@@ -1,54 +1,86 @@
-# React + TypeScript + Vite
+<h1 align="center">📝 Gerenciador de Tarefas</h1> <p align="center"> Uma aplicação web fullstack para organizar suas tarefas e categorias de forma simples e eficiente. </p> <p align="center"> <img src="https://img.shields.io/badge/Status-Em%20desenvolvimento-yellow" alt="status"> <img src="https://img.shields.io/badge/Front--end-React%2FTypeScript-blue"> <img src="https://img.shields.io/badge/Back--end-Java%2FSpring%20Boot-green"> </p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+✨ Funcionalidades
 
-Currently, two official plugins are available:
+✅ Cadastro e login de usuários
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✅ Validação de campos antes do envio
 
-## Expanding the ESLint configuration
+✅ Visualização de tarefas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+✅ Filtros por: Categoria / Conclusão / Ordem crescente/decrescente / Palavra-chave
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+✅ Criação de novas tarefas
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+✅ Criação de categorias personalizadas
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+✅ Exclusão de categorias
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+
+
+📁 Repositórios
+
+
+🔷 Front-end
+
+Tecnologias: React + TypeScript
+
+Como rodar o front-end:
+
+# Instalar dependências
+npm install
+
+# Iniciar o projeto
+npm run dev
+
+Páginas disponíveis:
+
+/ — Página inicial com funcionalidades de gerenciamento de tarefas (acesso só para usuários logados)
+
+/Login — Tela de login
+
+/SignUp — Tela de cadastro 
+
+🟢 Back-end
+
+Tecnologias: Java + Spring Boot
+
+Como rodar o back-end:
+
+Execute a classe Application.java como uma aplicação Spring Boot.
+
+Certifique-se de que o banco de dados esteja configurado corretamente nas application.properties. (Na aplicação foi utilizado o PostgreSQL)
+
+🔐 Autenticação
+Usuários não logados podem acessar a home (/), mas sem autonomia para interações.
+
+Para acessar recursos completos, é necessário estar logado.
+
+⚠️ Validação de dados
+Ao se cadastrar, os campos são verificados diretamente no front-end:
+
+Senha com requisitos mínimos
+
+E-mail válido
+
+Campos obrigatórios
+
+Caso algo esteja incorreto, uma mensagem de aviso é exibida para o usuário.
+
+🗑️ Exclusão de Categorias
+
+Ao remover uma categoria, todas as tarefas associadas também são automaticamente excluídas, garantindo consistência nos dados.
+
+✅ Requisitos para rodar o projeto
+
+Node.js e npm instalados (Front-end)
+
+Java 21+ instalado (Back-end)
+
+Banco de dados configurado (MySQL, PostgreSQL ou outro banco relacional)
+
+Sua IDE preferida (No desenvolvimento foram utilizados VSCode e IntelliJ)
+
+✍️ Autor
+
+Desenvolvido com dedicação por Elvis Júnior
