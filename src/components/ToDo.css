@@ -7,7 +7,10 @@
   gap: 2rem;
   padding-bottom: 2rem;
   background-color: black;
-  /* background-color: #E9EBF0; */
+}
+
+.toDo select{
+  cursor: pointer;
 }
 
 .toDo  h5{
@@ -127,9 +130,11 @@
   background-color: transparent;
   padding-left: 1rem;
   font-family: 'Poppins';
-  width: 15rem;
+  width: 14.5rem;
   resize: none;
   overflow: hidden;
+  padding-top: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .addTaskForm > select {

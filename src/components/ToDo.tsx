@@ -136,7 +136,7 @@ function ToDo() {
   };
 
   const handleDeleterCategory = async (idCategoria: string) => {
-    const confirmar = window.confirm('Tem certeza de que deseja deletar esta categoria?');
+    const confirmar = window.confirm('Tem certeza de que deseja deletar esta categoria? Todas as tarefas que a ela estão associadas também serão deletadas.');
 
     if (!confirmar) return;
 

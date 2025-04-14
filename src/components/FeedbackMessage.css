@@ -1,7 +1,7 @@
 .feedbackMessage {
     position: fixed;
     top: 40%;
-    left: 40%;
+    left: 39%;
     width: 20%;
     min-height: 10%;
     height: fit-content;
@@ -16,6 +16,8 @@
     font-size: 1rem;
     flex-direction: column;
     gap: 0.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
 .feedbackMessage p {

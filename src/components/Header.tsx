@@ -26,24 +26,22 @@ function Header() {
   
   return (
     <>
-      <div className='headerPag'>
-        <section className='header'>
-          <h2>MINI SISTEMA DE TAREFAS (ToDo)</h2>
-          <div>
-            {usuarioLogado ? (
-              <>
-                <p>Olá, {usuarioLogado.nome}</p>
-                <button onClick={handleLogout}>Sair</button>
-              </>
-            ) : (
-              <>
-                <a href='http://localhost:5173/LogIn'>Logar</a> |{' '}
-                <a href='http://localhost:5173/SignUp'>Cadastrar</a>
-              </>
-            )}
-          </div>
-        </section>
-      </div>
+      <section className='header'>
+        <a href='/'>MINI SISTEMA DE TAREFAS (ToDo)</a>
+        <div>
+          {usuarioLogado ? (
+            <>
+              <p>Olá, {usuarioLogado.nome}</p>
+              <button onClick={handleLogout}>Sair</button>
+            </>
+          ) : (
+            <>
+              <a href='/LogIn'>Logar</a> |{' '}
+              <a href='/SignUp'>Cadastrar</a>
+            </>
+          )}
+        </div>
+      </section>
     </>
   );
 }

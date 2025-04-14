@@ -111,7 +111,7 @@ export function SignUp (){
                     value={formData.input_confirmar_senha} onChange={handleInputChange}></input>
                     <div>
                         <input type="checkbox"></input>
-                        <p>Eu concordo com os<a href='http://localhost:5173/'> Termos de Uso</a></p>
+                        <p>Eu concordo com os<a href='/SignUp'> Termos de Uso</a></p>
                     </div>
                     <div>
                         <button type="submit" id='submit_form'>CADASTRAR</button>
