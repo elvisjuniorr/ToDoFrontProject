@@ -117,7 +117,7 @@ export function SignUp (){
                         <button type="submit" id='submit_form'>CADASTRAR</button>
                     </div>
                 </form>
-                <p>Já tem uma conta? <a href='http://localhost:5173/LogIn'>Entrar</a></p>
+                <p>Já tem uma conta? <a href='/LogIn'>Entrar</a></p>
             </div>
         </div>
     )
